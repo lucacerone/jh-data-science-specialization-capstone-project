@@ -1,3 +1,14 @@
+# Week 2
+
+### Preliminary Data Analysis
+
+I mostly analyzed the data following the tips/tutorial on these blogs:
+
+- [A gentle introduction to text mining using R](https://eight2late.wordpress.com/2015/05/27/a-gentle-introduction-to-text-mining-using-r/amp/)
+- [Intro to text Analysis with R](https://www.r-bloggers.com/intro-to-text-analysis-with-r/amp/)
+- [Text Mining in R](https://www.springboard.com/blog/text-mining-in-r/)
+- [A Text Mining in R tutorial](https://rstudio-pubs-static.s3.amazonaws.com/79849_99a76af8f46742009ba05949d2d3a96b.html)
+
 # Week 1
 
 ## Resources:
@@ -5,3 +16,14 @@
 - [Text mining infrastucture in R](http://www.jstatsoft.org/v25/i05/)
 - [CRAN Task View: Natural Language Processing](http://cran.r-project.org/web/views/NaturalLanguageProcessing.html)
 - [Stanford Natural Language Processing MOOC](https://www.coursera.org/learn/nlp)
+- [Natural language processing Wikipedia page](https://en.wikipedia.org/wiki/Natural_language_processing)
+- [Coursera course on NLP (not in R)](https://www.coursera.org/course/nlp)
+
+## Questions to consider
+
+- What do the data look like?
+- Where do the data come from?
+- Can you think of any other data sources that might help you in this project?
+- What are the common steps in natural language processing?
+- What are some common issues in the analysis of text data?
+- What is the relationship between NLP and the concepts you have learned in the Specialization?
