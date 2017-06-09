@@ -79,42 +79,12 @@ get_phrasetable <- function(txt, n, min_freq = 1, max_freq = Inf) {
 ### Build 2-grams and next word table
 
 ```{r}
-lall <- lapply(lall, function(x) {force(x); x[sapply(x,nwords, simplify = T, USE.NAMES = F) > 2]})
-gc()
-pt <- get_phrasetable(lall[[1]],2, min_freq = 2)
-gc()
-for ( i in seq(2, length(lall)) ) {
-  print(i)
-  cpt <- get_phrasetable(lall[[i]],2, min_freq = 2)
-  pt <- rbind(pt, cpt)
-  rm(cpt)
-  gc()
-  pt <- pt[, .(freq = sum(freq)), by = c("ngram", "next_word")]
-  gc()
+unlink("../data/en_US_ngrams/2ngrams_full_non_aggregated.tsv")
+for ( i in seq(1, length(lall)) ) {
+  cat("Processing file ", sprintf("%03d",i),".\n")
+  pt <- get_phrasetable(lall[[i]],2, min_freq = 1)
+  write_tsv(pt, "../data/en_US_ngrams/2ngrams_full_non_aggregated.tsv", append = T)
 }
-
-write_tsv(pt, "../data/en_US_ngrams/2ngrams_full.tsv")
-
-pt <- pt[order(-freq), head(.SD,1), by = "ngram"]
-write_tsv(pt, "../data/en_US_ngrams/2ngrams_predictions.tsv")
-
-##
-pt <- get_phrasetable(lall[[1]],2, min_freq = 1, max_freq=1 )
-gc()
-for ( i in seq(2, length(lall)) ) {
-  print(i)
-  cpt <- get_phrasetable(lall[[i]],2, min_freq = 1, max_freq=1)
-  pt <- rbind(pt, cpt)
-  rm(cpt)
-  gc()
-  pt <- pt[, .(freq = sum(freq)), by = c("ngram", "next_word")]
-  gc()
-}
-
-write_tsv(pt, "../data/en_US_ngrams/2ngrams_full.tsv", append = T)
-
-pt <- pt[order(-freq), head(.SD,1), by = "ngram"]
-write_tsv(pt, "../data/en_US_ngrams/2ngrams_predictions.tsv", append = T)
 ```
 
 ### Build 3-grams and next word table
