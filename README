@@ -2,12 +2,13 @@
 
 ### Preliminary Data Analysis
 
-I mostly analyzed the data following the tips/tutorial on these blogs:
+I mostly analyzed the data following the tips/tutorial and resources listed below:
 
 - [A gentle introduction to text mining using R](https://eight2late.wordpress.com/2015/05/27/a-gentle-introduction-to-text-mining-using-r/amp/)
 - [Intro to text Analysis with R](https://www.r-bloggers.com/intro-to-text-analysis-with-r/amp/)
 - [Text Mining in R](https://www.springboard.com/blog/text-mining-in-r/)
 - [A Text Mining in R tutorial](https://rstudio-pubs-static.s3.amazonaws.com/79849_99a76af8f46742009ba05949d2d3a96b.html)
+- [US English list of words](https://github.com/dwyl/english-words)
 
 # Week 1
 
