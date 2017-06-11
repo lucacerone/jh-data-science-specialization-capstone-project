@@ -10,6 +10,10 @@ I mostly analyzed the data following the tips/tutorial and resources listed belo
 - [A Text Mining in R tutorial](https://rstudio-pubs-static.s3.amazonaws.com/79849_99a76af8f46742009ba05949d2d3a96b.html)
 - [US English list of words](https://github.com/dwyl/english-words)
 
+- http://norvig.com/spell-correct.html
+- http://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/36180.pdf
+- http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=52A3B869596656C9DA285DCE83A0339F?doi=10.1.1.146.4390&rep=rep1&type=pdf
+
 # Week 1
 
 ## Resources:
@@ -28,3 +32,8 @@ I mostly analyzed the data following the tips/tutorial and resources listed belo
 - What are the common steps in natural language processing?
 - What are some common issues in the analysis of text data?
 - What is the relationship between NLP and the concepts you have learned in the Specialization?
+
+## Week 3
+
+- http://www.decontextualize.com/teaching/dwwp/topics-n-grams-and-markov-chains/
+- https://sookocheff.com/post/nlp/ngram-modeling-with-markov-chains/
